@@ -6,6 +6,7 @@ import girl from "../../../images/girl.png";
 import hand from "../../../images/hand.png";
 import CallToAction from "../../shared/CallToAction";
 import { BsFillQuestionSquareFill } from "react-icons/bs";
+import { MdMovieEdit } from "react-icons/md";
 
 
 import "./style.scss";
@@ -40,14 +41,22 @@ const IntroContent = () => {
                         alt="Nishchaya Narula"
                     />
 
-                    <div className="highlights horizontal">
+                    {/* <div className="highlights horizontal">
                         <div className="icon">
                             <BsAwardFill />
                         </div>
                         <div className="text">HackerRank (Intermediate)</div>
+                    </div> */}
+
+
+                    <div className="highlights horizontal" onClick={() => { window.open("https://movix-seven-ebon.vercel.app/", "_blank"); }}>
+                        <div className="icon">
+                            <MdMovieEdit />
+                        </div>
+                        <div className="text">Movix App (Project)</div>
                     </div>
 
-                    <div className="highlights verticle">
+                    <div className="highlights verticle" onClick={() => { window.open("https://leetcode.com/narula_1/", "_blank"); }}>
                         <div className="icon">
                             <BsFillQuestionSquareFill />
                         </div>

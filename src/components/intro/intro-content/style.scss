@@ -110,6 +110,13 @@
         @include small-screen {
           transform: scale(1);
         }
+        cursor: pointer;
+        :hover {
+          // background: #fffa65;
+          // box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
+          //   0 0 60px #fffa65;
+        }
+
         .icon {
           width: 55px;
           height: 55px;

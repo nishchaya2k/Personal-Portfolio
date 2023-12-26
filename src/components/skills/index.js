@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineCloudDownload } from "react-icons/ai";
-import ReactSnowfall from 'react-snowfall';
+import Snowfall from 'react-snowfall'
 
 
 import Section from "../shared/section";
@@ -14,30 +14,35 @@ import "./style.scss";
 const Skills = () => {
     return (
         <Section background="dark" id="skills">
-            <div className="skills-content-wrapper">
-                <div className="left-col">
-                    <img src={TechIcons} alt="JS,React,HTMl,CSS" />
-                </div>
+            <div style={{ height: '100%', width: '100%', position: 'relative', zIndex: '2', }}>
+                <Snowfall snowflakeCount={200} />
 
-                <div className="right-col">
-                    <h2>Skills</h2>
-                    <div className="Card">
-                        <ul>
-                            <li>React</li>
-                            <li>Javascript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>C++</li>
-                            <li>Bootstrap</li>
-                            <li>DS & Algo</li>
-
-                        </ul>
+                <div className="skills-content-wrapper">
+                    <div className="left-col">
+                        <img src={TechIcons} alt="JS,React,HTMl,CSS" />
                     </div>
-                    {/* <CallToAction text="Download CV" icon={<AiOutlineCloudDownload />} /> */}
-                    <a href={Resume} target="_blank">
-                        <CallToAction text="View CV" icon={<MdRemoveRedEye />} />
-                    </a>
 
+                    <div className="right-col">
+
+                        <h2>Skills</h2>
+                        <div className="Card">
+                            <ul>
+                                <li>React</li>
+                                <li>Javascript</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>C++</li>
+                                <li>Bootstrap</li>
+                                <li>DS & Algo</li>
+
+                            </ul>
+                        </div>
+                        {/* <CallToAction text="Download CV" icon={<AiOutlineCloudDownload />} /> */}
+                        <a href={Resume} target="_blank">
+                            <CallToAction text="View CV" icon={<MdRemoveRedEye />} />
+                        </a>
+
+                    </div>
                 </div>
             </div>
         </Section>
